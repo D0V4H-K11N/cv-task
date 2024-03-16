@@ -1,0 +1,26 @@
+/* FloatingButton.css */
+.floating-button {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292b2d;
+  color: #ffffff;
+  padding: 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+.floating-button:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Add a subtle shadow on hover */
+}
+
+.floating-button:active {
+  transform: translate(-50%, -50%) scale(0.95); /* Scale down the button when clicked */
+  box-shadow: none; /* Remove the shadow when clicked */
+}

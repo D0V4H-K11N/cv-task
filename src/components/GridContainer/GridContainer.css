@@ -1,0 +1,165 @@
+/* GridContainer.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5%;
+    padding: 2.5%;
+  
+    /* Center the grid container using flexbox */
+    margin: 0 auto;
+    max-width: 70%;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .grid-item {
+    border-radius: 4%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #292b2d;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 0;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
+    align-self: center;
+  }
+  
+  .grid-item p {
+    height: 120px;
+    font-size: 20px;
+    padding: 12.5px;
+    margin: 0;
+    color: #ffffff;
+    flex-grow: 1;
+    min-height: 0;
+    word-wrap: break-word; /* Ensure words break onto a new line */
+  }
+
+  @media screen and (height: 932px) {
+    .grid-item p {
+       font-size: 17px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .grid-item p {
+       font-size: 17px;
+    }
+  }
+
+
+  @media screen and (width: 430px) {
+    .grid-container {
+      max-width: 70%;
+    }
+    .grid-item p {
+       font-size: 20px;
+    }
+  }
+
+  @media screen and (width: 360px) {
+    .grid-item p {
+       font-size: 15px;
+    }
+  }
+
+  @media screen and (width: 390px) {
+    .grid-item p {
+       font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 8%;
+      gap: 5px;
+    }
+  
+    .grid-item {
+      margin-bottom: 20px;
+      min-height: 0;
+    }
+  
+    .grid-item img {
+      height: 70%;
+    }
+  }
+  
+  @media screen and (width: 768px) {
+    .grid-container {
+      max-width: 70%;
+    }
+    .grid-item p {
+      font-size: 25px;
+    }
+  }
+  
+  @media screen and (width: 280px) {
+    .grid-container {
+      max-width: 80%;
+    }
+    .grid-item p {
+       font-size: 14px;
+    }
+  }
+
+  @media screen and (width: 540px) {
+    .grid-container {
+      max-width: 80%;
+    }
+    .grid-item p {
+       font-size: 20px;
+    }
+  }
+
+  @media screen and (width: 1024px) {
+    .grid-container {
+      max-width: 80%;
+    }
+    .grid-item p {
+       font-size: 35px;
+    }
+  }
+
+  @media screen and (width: 412px) {
+    .grid-container {
+      max-width: 70%;
+    }
+    .grid-item p {
+       font-size: 16px;
+    }
+  }
+
+  @media screen and (width: 912px) {
+    .grid-container {
+      max-width: 70%;
+    }
+    .grid-item p {
+       font-size: 30px;
+    }
+  }
+
+  @media screen and (width: 820px) {
+    .grid-container {
+      max-width: 70%;
+    }
+    .grid-item p {
+       font-size: 27px;
+    }
+  }
+
+  @media screen and (height: 896px) {
+    .grid-item p {
+      font-size: 17px;
+      align-items: center;
+    }
+  }
