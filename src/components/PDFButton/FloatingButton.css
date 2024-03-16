@@ -24,3 +24,12 @@
   transform: translate(-50%, -50%) scale(0.95); /* Scale down the button when clicked */
   box-shadow: none; /* Remove the shadow when clicked */
 }
+
+
+@media screen and (max-width: 1025px) {
+  .floating-button {
+    top: 92.5%;
+    font-size: 125%;
+    padding: 5%;
+  }
+}
