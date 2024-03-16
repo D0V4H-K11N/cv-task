@@ -32,9 +32,15 @@ function App() {
     },
   ];
 
+  // Add index property to each item in gridItemsData array
+  const gridItemsDataWithIndex = gridItemsData.map((item, index) => ({
+    ...item,
+    index,
+  }));
+
   return (
     <div>
-      <GridContainer gridItemsData={gridItemsData} />
+      <GridContainer gridItemsData={gridItemsDataWithIndex} />
       <FloatingButton />
     </div>
   );

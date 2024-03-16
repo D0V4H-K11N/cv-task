@@ -1,15 +1,19 @@
 // GridContainer.jsx
-import './GridContainer.css'; // Import your CSS file
+import React from 'react';
+import './GridContainer.css';
 import GridItem from '../GridItem/GridItem';
 
 const GridContainer = ({ gridItemsData }) => {
- 
-
   return (
     <div className="grid-container">
-        {gridItemsData.map((item, index) => (
-            <GridItem key={index} imageUrl={item.imageUrl} text={item.text} />
-        ))}
+      {gridItemsData.map((item, index) => (
+        <GridItem
+          key={index}
+          imageUrl={item.imageUrl}
+          initialText={item.text}
+          index={index} // Pass the index prop to each GridItem
+        />
+      ))}
     </div>
   );
 };
