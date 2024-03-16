@@ -1,7 +1,7 @@
 /* FloatingButton.css */
 .floating-button {
   position: fixed;
-  top: 90%;
+  top: 92.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #292b2d;
@@ -28,7 +28,6 @@
 
 @media screen and (max-width: 1025px) {
   .floating-button {
-    top: 92.5%;
     font-size: 125%;
     padding: 5%;
   }
