@@ -14,6 +14,7 @@
   }
   
   .grid-item {
+    perspective: 1000px;
     border-radius: 4%;
     overflow: hidden;
     text-align: center;
@@ -23,6 +24,8 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     min-height: 0;
+    transition: transform 0.2s ease;
+    pointer-events: none;
   }
   
   .grid-item img {
@@ -32,6 +35,24 @@
     align-self: center;
   }
   
+  .grid-item * {
+    pointer-events: auto; /* Re-enable pointer events for child elements */
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.15); /* Scale up on hover */
+  }
+
+  @keyframes pop-up {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+  }
+  
+
+  .grid-item:not(:hover) {
+    transform: none 0.3 ease;
+  }
+
   .grid-item p {
     height: 120px;
     font-size: 20px;
